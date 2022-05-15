@@ -1,0 +1,358 @@
+$primaryBlue: #3685fb;
+$h2fontsize: 2rem;
+$h3fontSize: 1.5rem;
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2.5rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 5;
+  .logo-box > img {
+    width: 125px;
+  }
+  ul {
+    display: flex;
+    align-items: center;
+    gap: 2.3rem;
+    font-size: 0.9rem;
+    list-style-type: none;
+    font-weight: 400;
+
+    a {
+      text-decoration: none;
+      color: rgba(0, 0, 0, 0.7);
+    }
+    .home {
+      color: $primaryBlue;
+    }
+    .book {
+      color: #fff;
+      background-color: $primaryBlue;
+      padding: 0.5rem 1.5rem;
+      border-radius: 2rem;
+    }
+  }
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10rem 5rem 2.5rem 5rem;
+
+  .hero-con {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .hero-img-con {
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    align-items: flex-end;
+    .hero-img {
+      width: 255px;
+      border-radius: 250px;
+      border: 6px solid #e6e5e5;
+    }
+    figure > .left {
+      // height: 20rem;
+      width: 300px;
+    }
+    figure > .right {
+      // position: absolute;
+      transform: translateX(-7.5rem);
+    }
+  }
+
+  .hero-h1-box {
+    display: flex;
+    align-items: flex-end;
+  }
+  h1 {
+    display: inline;
+    font-size: 3rem;
+    align-items: center;
+    // padding-bottom: 2.5rem;
+
+    .hero-logo {
+      width: 15rem;
+      transform: translateY(0.9rem);
+      // padding-top: 0.5rem;
+      // display: inline;
+      align-self: flex-end;
+    }
+  }
+  .hero-txt-con > p {
+    color: #898989;
+    width: 96.5%;
+    display: block;
+    margin: 3rem 0;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .hero-btn {
+    color: #fff;
+    // width;
+    background-color: $primaryBlue;
+    padding: 1rem 4.5rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    // margin: 10rem 0;
+    // display: inline-block;
+  }
+
+  form {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    background-color: #f0f2f5;
+    padding: 0.8rem 1rem 0.8rem 2rem;
+    border-radius: 100px;
+    // height: 6rem;
+    label,
+    input {
+      display: block;
+    }
+    label {
+      margin-bottom: 0.5rem;
+      font-size: 1rem;
+      font-weight: 600;
+    }
+    input,
+    input::placeholder {
+      border: none;
+      background-color: transparent;
+      font-size: 0.9rem;
+      color: #898989;
+    }
+    .form-block {
+      border-left: 1px solid #898989;
+      padding-left: 1.5rem;
+    }
+    button {
+      background: $primaryBlue;
+      width: 4rem;
+      height: 4rem;
+      border-radius: 2rem;
+      border: none;
+      .search-icon {
+        color: #fff;
+      }
+    }
+  }
+}
+
+// BOOKING SECTION
+.booking {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100vw;
+}
+
+.bkg-gradient {
+  width: 100vw;
+  height: 40vh;
+  background: linear-gradient(to right, lightgreen, lightblue);
+}
+
+.booking-con {
+  width: 75%;
+  height: 450px;
+  background-image: url("../assets/images/book5.jpeg");
+  background-size: cover;
+  background-position: bottom;
+  // transform: translateY(-15rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  border-radius: 12px;
+  padding-bottom: 2.5rem;
+  margin-top: -15rem;
+  h2 {
+    color: #fff;
+    font-size: $h2fontsize;
+    padding-bottom: 1rem;
+  }
+  a {
+    color: $primaryBlue;
+    background-color: #fff;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 1rem 4.5rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    justify-self: center;
+    transition: all 0.3s ease-in-out;
+    // background-image: linear-gradient(to right, lightgreen, lightblue);
+    &:hover,
+    &:focus {
+      color: #fff;
+      background-image: linear-gradient(to right, lightblue, lightgreen);
+    }
+  }
+}
+
+// EXPERIENCE SECTION
+
+.experiences {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  position: relative;
+
+  h2 {
+    font-size: $h2fontsize;
+    font-weight: 600;
+  }
+  .sm-card-con {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+    z-index: 5;
+    .small-card1,
+    .small-card2,
+    .small-card3 {
+      background-size: cover;
+      background-position: center;
+      width: 300px;
+      height: 350px;
+      border-radius: 15px;
+      color: #f8f8f8;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      padding-bottom: 2rem;
+      transition: all 0.4s ease-in-out;
+      box-shadow: 0px -5px 20px -4px rgba(0, 0, 0, 0.5);
+
+      &:hover {
+        box-shadow: 0px 5px 20px -4px rgba(0, 0, 0, 0.5);
+        transform: translateY(-5px);
+      }
+
+      .sm-card-txt {
+        background-size: contain;
+        width: 70%;
+        background-color: rgba(30, 57, 106, 0.75);
+        border-radius: 12px;
+        backdrop-filter: blur(2px) saturate(101%);
+        justify-content: center;
+        align-items: flex-end;
+        display: flex;
+        transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+      }
+
+      h3 {
+        font-size: $h3fontSize;
+        font-weight: 400;
+        padding-bottom: 1rem;
+      }
+    }
+    .small-card1 {
+      background-image: url(../assets/images/smallcard2.jpeg);
+    }
+    .small-card2 {
+      background-image: url(../assets/images/smallcard3.jpeg);
+    }
+    .small-card3 {
+      background-image: url(../assets/images/smallcard6.jpeg);
+    }
+  }
+}
+
+// YOUR STAY SECTION
+.your-stay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h2 {
+    font-size: $h2fontsize;
+    text-align: center;
+  }
+  .lrg-card-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+    width: 67%;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+  }
+  .lrg-card1,
+  .lrg-card2,
+  .lrg-card3,
+  .lrg-card4 {
+    width: 100%;
+    height: 25rem;
+    background-position: center;
+    background-size: cover;
+    border-radius: 12px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: left;
+    padding: 2rem;
+    h3 {
+      font-size: $h3fontSize;
+      color: #f8f8f8;
+    }
+  }
+  .lrg-card1 {
+    background-image: url(../assets/images/kayak2.jpeg);
+  }
+  .lrg-card2 {
+    background-image: url(../assets/images/rock-climb1.jpeg);
+  }
+  .lrg-card3 {
+    background-image: url(../assets/images/para1.jpeg);
+  }
+  .lrg-card4 {
+    background-image: url(../assets/images/hballon1.jpeg);
+  }
+}
+
+// PACKAGE SECTION
+
+.cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  h2 {
+    font-size: $h2fontsize;
+    color: rgb(11, 11, 11);
+    display: inline-block;
+    margin: 5rem 0 2rem;
+  }
+  .bg-gradient {
+    width: 100vw;
+    height: 40vh;
+    // background-color: lightpink;
+    background: linear-gradient(to right, lightblue, #f8f8f8);
+    text-align: center;
+  }
+}

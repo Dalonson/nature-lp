@@ -1,0 +1,530 @@
+*,
+::before,
+::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem 2.5rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 5;
+}
+
+header .logo-box > img {
+  width: 125px;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2.3rem;
+  font-size: 0.9rem;
+  list-style-type: none;
+  font-weight: 400;
+}
+
+header ul a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+header ul .home {
+  color: #3685fb;
+}
+
+header ul .book {
+  color: #fff;
+  background-color: #3685fb;
+  padding: 0.5rem 1.5rem;
+  border-radius: 2rem;
+}
+
+.hero-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 10rem 5rem 2.5rem 5rem;
+}
+
+.hero-section .hero-con {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero-section .hero-img-con {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  position: relative;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.hero-section .hero-img-con .hero-img {
+  width: 255px;
+  border-radius: 250px;
+  border: 6px solid #e6e5e5;
+}
+
+.hero-section .hero-img-con figure > .left {
+  width: 300px;
+}
+
+.hero-section .hero-img-con figure > .right {
+  -webkit-transform: translateX(-7.5rem);
+          transform: translateX(-7.5rem);
+}
+
+.hero-section .hero-h1-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.hero-section h1 {
+  display: inline;
+  font-size: 3rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero-section h1 .hero-logo {
+  width: 15rem;
+  -webkit-transform: translateY(0.9rem);
+          transform: translateY(0.9rem);
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.hero-section .hero-txt-con > p {
+  color: #898989;
+  width: 96.5%;
+  display: block;
+  margin: 3rem 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.hero-section .hero-btn {
+  color: #fff;
+  background-color: #3685fb;
+  padding: 1rem 4.5rem;
+  border-radius: 2rem;
+  text-decoration: none;
+}
+
+.hero-section form {
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5rem;
+  background-color: #f0f2f5;
+  padding: 0.8rem 1rem 0.8rem 2rem;
+  border-radius: 100px;
+}
+
+.hero-section form label,
+.hero-section form input {
+  display: block;
+}
+
+.hero-section form label {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.hero-section form input,
+.hero-section form input::-webkit-input-placeholder {
+  border: none;
+  background-color: transparent;
+  font-size: 0.9rem;
+  color: #898989;
+}
+
+.hero-section form input,
+.hero-section form input:-ms-input-placeholder {
+  border: none;
+  background-color: transparent;
+  font-size: 0.9rem;
+  color: #898989;
+}
+
+.hero-section form input,
+.hero-section form input::-ms-input-placeholder {
+  border: none;
+  background-color: transparent;
+  font-size: 0.9rem;
+  color: #898989;
+}
+
+.hero-section form input,
+.hero-section form input::placeholder {
+  border: none;
+  background-color: transparent;
+  font-size: 0.9rem;
+  color: #898989;
+}
+
+.hero-section form .form-block {
+  border-left: 1px solid #898989;
+  padding-left: 1.5rem;
+}
+
+.hero-section form button {
+  background: #3685fb;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 2rem;
+  border: none;
+}
+
+.hero-section form button .search-icon {
+  color: #fff;
+}
+
+.booking {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 100vw;
+}
+
+.bkg-gradient {
+  width: 100vw;
+  height: 40vh;
+  background: -webkit-gradient(linear, left top, right top, from(lightgreen), to(lightblue));
+  background: linear-gradient(to right, lightgreen, lightblue);
+}
+
+.booking-con {
+  width: 75%;
+  height: 450px;
+  background-image: url("../assets/images/book5.jpeg");
+  background-size: cover;
+  background-position: bottom;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  border-radius: 12px;
+  padding-bottom: 2.5rem;
+  margin-top: -15rem;
+}
+
+.booking-con h2 {
+  color: #fff;
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+
+.booking-con a {
+  color: #3685fb;
+  background-color: #fff;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 1rem 4.5rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.booking-con a:hover, .booking-con a:focus {
+  color: #fff;
+  background-image: -webkit-gradient(linear, left top, right top, from(lightblue), to(lightgreen));
+  background-image: linear-gradient(to right, lightblue, lightgreen);
+}
+
+.experiences {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  position: relative;
+}
+
+.experiences h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.experiences .sm-card-con {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+  z-index: 5;
+}
+
+.experiences .sm-card-con .small-card1,
+.experiences .sm-card-con .small-card2,
+.experiences .sm-card-con .small-card3 {
+  background-size: cover;
+  background-position: center;
+  width: 300px;
+  height: 350px;
+  border-radius: 15px;
+  color: #f8f8f8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-bottom: 2rem;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  -webkit-box-shadow: 0px -5px 20px -4px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px -5px 20px -4px rgba(0, 0, 0, 0.5);
+}
+
+.experiences .sm-card-con .small-card1:hover,
+.experiences .sm-card-con .small-card2:hover,
+.experiences .sm-card-con .small-card3:hover {
+  -webkit-box-shadow: 0px 5px 20px -4px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 5px 20px -4px rgba(0, 0, 0, 0.5);
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+.experiences .sm-card-con .small-card1 .sm-card-txt,
+.experiences .sm-card-con .small-card2 .sm-card-txt,
+.experiences .sm-card-con .small-card3 .sm-card-txt {
+  background-size: contain;
+  width: 70%;
+  background-color: rgba(30, 57, 106, 0.75);
+  border-radius: 12px;
+  -webkit-backdrop-filter: blur(2px) saturate(101%);
+          backdrop-filter: blur(2px) saturate(101%);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.experiences .sm-card-con .small-card1 h3,
+.experiences .sm-card-con .small-card2 h3,
+.experiences .sm-card-con .small-card3 h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding-bottom: 1rem;
+}
+
+.experiences .sm-card-con .small-card1 {
+  background-image: url(../assets/images/smallcard2.jpeg);
+}
+
+.experiences .sm-card-con .small-card2 {
+  background-image: url(../assets/images/smallcard3.jpeg);
+}
+
+.experiences .sm-card-con .small-card3 {
+  background-image: url(../assets/images/smallcard6.jpeg);
+}
+
+.your-stay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.your-stay h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.your-stay .lrg-card-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  gap: 2rem;
+  width: 67%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+
+.your-stay .lrg-card1,
+.your-stay .lrg-card2,
+.your-stay .lrg-card3,
+.your-stay .lrg-card4 {
+  width: 100%;
+  height: 25rem;
+  background-position: center;
+  background-size: cover;
+  border-radius: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  padding: 2rem;
+}
+
+.your-stay .lrg-card1 h3,
+.your-stay .lrg-card2 h3,
+.your-stay .lrg-card3 h3,
+.your-stay .lrg-card4 h3 {
+  font-size: 1.5rem;
+  color: #f8f8f8;
+}
+
+.your-stay .lrg-card1 {
+  background-image: url(../assets/images/kayak2.jpeg);
+}
+
+.your-stay .lrg-card2 {
+  background-image: url(../assets/images/rock-climb1.jpeg);
+}
+
+.your-stay .lrg-card3 {
+  background-image: url(../assets/images/para1.jpeg);
+}
+
+.your-stay .lrg-card4 {
+  background-image: url(../assets/images/hballon1.jpeg);
+}
+
+.cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.cta h2 {
+  font-size: 2rem;
+  color: #0b0b0b;
+  display: inline-block;
+  margin: 5rem 0 2rem;
+}
+
+.cta .bg-gradient {
+  width: 100vw;
+  height: 40vh;
+  background: -webkit-gradient(linear, left top, right top, from(lightblue), to(#f8f8f8));
+  background: linear-gradient(to right, lightblue, #f8f8f8);
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */
