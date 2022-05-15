@@ -208,7 +208,7 @@ header {
     &:hover,
     &:focus {
       color: #fff;
-      background-image: linear-gradient(to right, lightblue, lightgreen);
+      background-image: linear-gradient(to right, #add8e6, lightgreen);
     }
   }
 }
@@ -342,17 +342,37 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
   h2 {
     font-size: $h2fontsize;
     color: rgb(11, 11, 11);
     display: inline-block;
     margin: 5rem 0 2rem;
   }
+  .cta-con {
+    display: flex;
+    gap: 2rem;
+    position: absolute;
+    top: 9.5rem;
+    article {
+      width: 20rem;
+      height: 25rem;
+      background-color: #f1f1f1;
+      border: 5px solid #fff;
+      margin-bottom: 5rem;
+      border-radius: 12px;
+      box-shadow: 0px 0px 50px 6px rgba(0, 0, 0, 0.1);
+      padding: 2rem;
+    }
+    .vip {
+      background: linear-gradient(to right bottom, $primaryBlue, #95c2e6);
+    }
+  }
   .bg-gradient {
     width: 100vw;
     height: 40vh;
     // background-color: lightpink;
-    background: linear-gradient(to right, lightblue, #f8f8f8);
+    background: linear-gradient(to left top, #d7e7fe, $primaryBlue);
     text-align: center;
   }
 }

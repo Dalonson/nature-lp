@@ -305,8 +305,8 @@ header ul .book {
 
 .booking-con a:hover, .booking-con a:focus {
   color: #fff;
-  background-image: -webkit-gradient(linear, left top, right top, from(lightblue), to(lightgreen));
-  background-image: linear-gradient(to right, lightblue, lightgreen);
+  background-image: -webkit-gradient(linear, left top, right top, from(#add8e6), to(lightgreen));
+  background-image: linear-gradient(to right, #add8e6, lightgreen);
 }
 
 .experiences {
@@ -511,6 +511,7 @@ header ul .book {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
 }
 
 .cta h2 {
@@ -520,11 +521,37 @@ header ul .book {
   margin: 5rem 0 2rem;
 }
 
+.cta .cta-con {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+  position: absolute;
+  top: 9.5rem;
+}
+
+.cta .cta-con article {
+  width: 20rem;
+  height: 25rem;
+  background-color: #f1f1f1;
+  border: 5px solid #fff;
+  margin-bottom: 5rem;
+  border-radius: 12px;
+  -webkit-box-shadow: 0px 0px 50px 6px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 50px 6px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+.cta .cta-con .vip {
+  background: -webkit-gradient(linear, left top, right bottom, from(#3685fb), to(#95c2e6));
+  background: linear-gradient(to right bottom, #3685fb, #95c2e6);
+}
+
 .cta .bg-gradient {
   width: 100vw;
   height: 40vh;
-  background: -webkit-gradient(linear, left top, right top, from(lightblue), to(#f8f8f8));
-  background: linear-gradient(to right, lightblue, #f8f8f8);
+  background: -webkit-gradient(linear, right bottom, left top, from(#d7e7fe), to(#3685fb));
+  background: linear-gradient(to left top, #d7e7fe, #3685fb);
   text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
